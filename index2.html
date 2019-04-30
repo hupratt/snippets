@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="jquery.flagstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="flags.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+
+#popUp{
+position:fixed;
+z-index:20;
+max-width:350px;
+height:255px;
+background:rgba(236, 240, 241, 1);
+border:7px solid #fff;
+bottom:0px;
+-moz-transition:all 1s ease
+-o-transition:all 1s ease
+transition:all 1s ease
+}
+</style>
+
+</head>
+
+<body>
+
+<form class="form-horizontal">
+	<div class="form-group">
+        <label>Select Country</label><br>
+        <div class="flagstrap" data-input-name="country"></div>
+    </div>
+</form>
+
+  <div id="popUp">
+    <button id="close" class="close"><i class="fa fa-times"></i></button>
+    <div id="new"><span>"JOIN THE BOTS!"</span></div>
+    <h2>"Join the PythonBots blog so that you can create, edit, comment and get notified whenever articles are added."</h2>
+        <a href="" class="button-3d" style="margin-left: 17%;">
+            <span>"Login/Signup"</span>
+        </a>
+  </div> 
+  
+
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-2"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-3"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+<div style='height:200px; background-color:red;text-align: center;' class = "ben" id="divToLoad-1"><img style="background-color:blue;" src="AromaticVigorousCockatiel-small.gif"/> </div>
+
+</body>
+
+
+
+<script>
+
+
+$(document).ready(function(){
+
+  function toad(){
+    const src= "http://apod.nasa.gov/apod/image/9712/orionfull_jcc_big.jpg";
+    $("#divToLoad-1").css("background-image", "url(" + src + ")");
+    $(".ben > img").remove();
+  };
+  
+// $.getScript("jquery.flagstrap.js")
+  setTimeout(toad,2000);
+
+  $('.flagstrap').flagStrap();
+
+
+
+
+    $(document).scroll(function() {
+
+    var scroll = $(this).scrollTop();
+    console.log(scroll)
+
+    if (scroll <= 150) {
+
+    $("#popUp").css("margin-left", "0px");
+
+    }
+
+    });
+
+
+
+    $("#close").click(function() {
+
+      $("#popUp").css("margin-left", "-425px");
+
+    });
+});
+
+</script>
+
+</html>
