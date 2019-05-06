@@ -90,11 +90,11 @@ padding:2px;
 
   <div id="popUp" class="hidden">
     <button id="close" class="close"><i class="fa fa-times"></i></button>
-    <div id="cookieHeader"><span>Would you like some cookies?</span></div>
+    <div id="cookieHeader"><span>Care for some cookies?</span></div>
     
     <div class="wrapper">
     
-    <h2>La petite portugaise stores cookies on your browser to store display sizes and other preferences.</h2>
+    <h2>La petite portugaise stores cookies on your browser to improve the overall quality of its services.</h2>
     <h2>Please note that by using this site you agree with the privacy policy and terms of use.</h2>
     <div  class="container left" class="col">
         <a class="row left" style="margin-top:10px">Tell me more</a>
@@ -105,12 +105,14 @@ padding:2px;
   
 </body>
 
+<h2>La petite portugaise speichert Cookies in Ihrem Browser um die Gesamtqualität unserer Dienstleistungen zu verbessern.</h2>
+<h2>Bitte beachten Sie, dass Sie durch die Nutzung dieser Website den Datenschutzbestimmungen und Nutzungsbedingungen zustimmen.</h2>
 
 
 <script>
 
 
-$(document).ready(function(){
+$(document).ready(() => {
     setTimeout(() => {
       $("#popUp").addClass("visible");
       $("#popUp").removeClass("hidden");
